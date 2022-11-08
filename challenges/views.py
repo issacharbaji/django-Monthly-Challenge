@@ -18,10 +18,12 @@ challenges = {
     'December':'Guess who'
 }
 
-def index(request,challenge):
+def index(request,month):
     
     try:
-        check = challenges[challenge]
-        return render(request,'challenges/view.html',context=challenges)
+        result = challenges[month]
+        return HttpResponse(result)
+        #return render(request,'challenges/view.html',context= challenges)
     except:
+        result = 'No page for this topic'
         raise Http404("404 GENERIC ERROR")
