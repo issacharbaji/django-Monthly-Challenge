@@ -6,18 +6,12 @@
     <title>Document</title>
 </head>
 <body>
-
-    {% comment %} <h1>Conneted!</h1>
     
     <ul>
-        {% for month in challenges.items %}
-        
-            <li>{{month}}</li>
-
+        {% for month in my_dic %}
+        <li><a href="/challenges/{{month}}">{{month}}</a></li>
         {% endfor %}
-
-
-    </ul> {% endcomment %}
+    </ul>
 
 </body>
 </html>
