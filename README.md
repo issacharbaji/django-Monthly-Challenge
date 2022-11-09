@@ -4,3 +4,4 @@ It covers these topics:
 - Reverse function
 - Redirects
 - Returning data to HTML
+- Template Inheritance
