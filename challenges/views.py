@@ -33,8 +33,8 @@ def index(request, month):
         return HttpResponse(result)
         # return render(request,'challenges/view.html',context= challenges)
     except:
-        result = 'No page for this topic'
-        raise Http404("404 GENERIC ERROR")
+
+        raise Http404()
 
 
 def month_num(request, num):
@@ -42,7 +42,7 @@ def month_num(request, num):
     key_list = list(challenges['my_dic'])  # a list of the months
 
     if num > len(key_list):
-        return HttpResponse('Invalid month')
+        raise Http404()
 
     month = key_list[num - 1]
     redirect_path = reverse('month_num', args=[month])
