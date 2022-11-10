@@ -5,3 +5,4 @@ It covers these topics:
 - Redirects
 - Returning data to HTML
 - Template Inheritance
+- 404 template
