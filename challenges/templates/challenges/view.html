@@ -1,11 +1,14 @@
-{% extends 'base.html' %}
-    
+{% extends 'base.html' %} 
+{% load static %} 
 
-    {% block content %}
-    <ul>
-        {% for month in my_dic %}
-        <li><a href="/challenges/{{month}}">{{month}}</a></li>
-        {% endfor %}
-    </ul>
-    {% endblock %}
+{% block css_files %} 
+<link rel="stylesheet" href="{% static 'challenges/script.css' %}"> 
+{% endblock %}
 
+{% block content %}
+<ul>
+  {% for month in my_dic %}
+  <li><a href="/challenges/{{month}}">{{month}}</a></li>
+  {% endfor %}
+</ul>
+{% endblock %}

@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Bubbles&display=swap');
+
+
+html {
+    font-family: 'Rubik Bubbles', cursive;
+}
+h1{
+    color: red;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    background-color: #1a1a1a;
+}
+
