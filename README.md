@@ -6,3 +6,5 @@ It covers these topics:
 - Returning data to HTML
 - Template Inheritance
 - 404 template
+- Static files
+- CSS styling
